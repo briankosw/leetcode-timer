@@ -15,10 +15,12 @@ const zeroPad = (num: number): string => String(num).padStart(2, "0");
 
 const startTimer = () => {
   console.log("Starting timer")
-  timer = new Timer((hours, minutes, seconds) => {
-    const timeString = `${zeroPad(hours)}:${zeroPad(minutes)}:${zeroPad(seconds)}`
-    $(timerText).text(timeString);
-  });
+  if (timer === undefined) {
+    timer = new Timer((hours, minutes, seconds) => {
+      const timeString = `${zeroPad(hours)}:${zeroPad(minutes)}:${zeroPad(seconds)}`
+      $(timerText).text(timeString);
+    });
+  }
   timer.start();
 }
 

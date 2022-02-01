@@ -2,20 +2,18 @@ type CallbackFunction = (hours: number, minutes: number, seconds: number) => voi
 
 export default class Timer {
   callback: CallbackFunction;
-  isRunning = false;
   startTime = 0;
   interval: any;
+  elapsedMilliseconds = 0;
 
   constructor(callback: CallbackFunction) {
     this.callback = callback;
   }
 
   start = () => {
-    if (this.isRunning) return;
-    this.isRunning = true;
     this.startTime = Date.now()
     this.interval = setInterval(() => {
-      const elapsedMilliseconds = Date.now() - this.startTime;
+      const elapsedMilliseconds = this.elapsedMilliseconds + Date.now() - this.startTime;
       const [hours, minutes, seconds] = Timer.calculateHMS(elapsedMilliseconds);
       this.callback(hours, minutes, seconds)
     }, 100);
@@ -23,6 +21,7 @@ export default class Timer {
 
   stop = () => {
     clearInterval(this.interval);
+    this.elapsedMilliseconds += Date.now() - this.startTime;
   }
 
   static calculateHMS(elapsedMilliseconds: number) {
