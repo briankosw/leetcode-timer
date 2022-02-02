@@ -3,7 +3,6 @@ import Timer from "./timer";
 
 const runCodeButtonAttr = "data-cy=\"run-code-btn\""
 
-let intervalId: any;
 let runCodeButton: JQuery<HTMLElement>;
 let buttonDiv: JQuery<HTMLElement>;
 let timerButton: JQuery<HTMLElement>;
@@ -62,13 +61,7 @@ const addTimerButton = () => {
       )
       .insertBefore(buttonDiv);
     timerText = $("<p/>").text("00:00:00").addClass("timerText").insertBefore(timerButton);
-  } else if (timerButton.length) {
-    console.log("Timer button exists. Clearing interval");
-    clearInterval(intervalId)
-    console.log("Clear interval")
-  } else  {
-    console.log("Failed. Trying again.")
   }
 }
 
-intervalId = setInterval(addTimerButton, 500);
+setInterval(addTimerButton, 500);
