@@ -58,9 +58,29 @@ const addTimerButton = () => {
             }
           })
         )
-      )
-      .insertBefore(buttonDiv);
-    timerText = $("<p/>").text("00:00:00").addClass("timerText").insertBefore(timerButton);
+      ).insertBefore(buttonDiv)
+    const timerTextDiv = $("<div/>")
+                          .addClass("timerTextDiv")
+                          .insertBefore(timerButton);
+    timerText = $("<p/>")
+                  .text("00:00:00")
+                  .addClass("timerText")
+                  .on("mouseenter", (e) => {
+                    $(e.currentTarget).css("text-decoration", "underline dashed")
+                  })
+                  .on("mouseleave", (e) => {
+                    $(e.currentTarget).css("text-decoration", "none")
+                  })
+                  .on("click", (e) => {
+                    navigator.clipboard.writeText(e.currentTarget.innerHTML);
+                    const copyText = $("<p/>")
+                      .addClass("copyText")
+                      .text("Copied!")
+                      .hide();
+                    $(timerTextDiv).prepend(copyText)
+                    copyText.show().fadeOut(1500, () => copyText.remove());
+                  })
+      timerTextDiv.append(timerText)
   }
 }
 
