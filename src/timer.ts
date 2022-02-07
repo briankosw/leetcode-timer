@@ -5,12 +5,14 @@ export default class Timer {
   startTime = 0;
   interval: any;
   elapsedMilliseconds = 0;
+  isRunning = false;
 
   constructor(callback: CallbackFunction) {
     this.callback = callback;
   }
 
   start = () => {
+    this.isRunning = true;
     this.startTime = Date.now()
     this.interval = setInterval(() => {
       const elapsedMilliseconds = this.elapsedMilliseconds + Date.now() - this.startTime;
@@ -20,11 +22,17 @@ export default class Timer {
   }
 
   stop = () => {
+    this.isRunning = false;
     clearInterval(this.interval);
     this.elapsedMilliseconds += Date.now() - this.startTime;
   }
 
-  static calculateHMS(elapsedMilliseconds: number) {
+  reset = () => {
+    if (this.isRunning) this.stop();
+    this.elapsedMilliseconds = 0;
+  }
+
+  static calculateHMS(elapsedMilliseconds: number): number[] {
     const elapsedSeconds = Math.floor(elapsedMilliseconds / 1000);
     const hours = Math.floor(elapsedSeconds / 3600);
     const minutes = Math.floor(elapsedSeconds / 60);

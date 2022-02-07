@@ -1,3 +1,4 @@
+/* Timer Time*/
 .timerTextDiv {
   display: flex;
   flex-direction: column;
@@ -14,6 +15,10 @@
   position: relative;
 }
 
+.timerText:hover {
+  text-decoration: underline dashed;
+}
+
 .copyText {
   position: absolute;
   bottom: 23px;
@@ -21,12 +26,14 @@
   font-size: 10px;
 }
 
-.timerSpan {
+/* Timer Button*/
+.timerButtonDiv {
+  position: relative;
   margin-right: 15px;
   user-select: none;
   width: 150px;
   box-sizing: border-box;
-  display: block;
+  height: 32px;
 }
 
 .timerButton {
@@ -39,7 +46,7 @@
   transition: all 0.18s ease-in-out 0s;
   height: 32px;
   cursor: pointer;
-  background: transparent none repeat scroll 0% 0%;
+  background: #fff none repeat scroll 0% 0%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,9 +64,14 @@
 }
 
 .timerButtonLabel {
-  width: 98px;
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  margin-bottom: 0px;
+  width: 105px;
+  text-align: start;
+}
+
+.optionDiv {
+  position: absolute;
+  height: 32px;
+  width: 150px;
+  bottom: 32px;
 }
