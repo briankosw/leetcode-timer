@@ -1,5 +1,8 @@
 # LeetCode Timer
 
+![Mozilla Add-on](https://img.shields.io/amo/users/leetcode-timer?label=Firefox%20Users)
+![Mozilla Add-on](https://img.shields.io/amo/stars/leetcode-timer?label=Firefox%20Rating)
+
 [LeetCode Timer](https://addons.mozilla.org/en-US/firefox/addon/leetcode-timer/) is a Firefox extension for timing LeetCode problems. Whether you're practicing time management while solving problems or you simply want to understand how long you're taking, LeetCode Timer provides an easy way to time yourself - no more going back and forth between your phone's timer and your problem!
 
 # Features
