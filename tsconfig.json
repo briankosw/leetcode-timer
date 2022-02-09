@@ -3,7 +3,6 @@
     "target": "es2017",
     "module": "esnext",
     "moduleResolution": "node",
-    "typeRoots": ["node_modules/@types", "node_modules/web-ext-types"],
     "sourceMap": true,
     "outDir": "./dist",
     "esModuleInterop": true,
