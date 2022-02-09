@@ -32,6 +32,12 @@ module.exports = {
           from: path.resolve(__dirname, "assets/css"),
           to: path.resolve(__dirname, "dist/css"),
         },
+        {
+          from: path.resolve(
+            __dirname, "node_modules/webextension-polyfill/dist/browser-polyfill.js"
+        ),
+          to: path.resolve(__dirname, "dist"),
+        }
       ],
     }),
   ],

@@ -13,7 +13,8 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "webextension-polyfill": "^0.8.0"
   },
   "devDependencies": {
     "@sindresorhus/tsconfig": "^2.0.0",

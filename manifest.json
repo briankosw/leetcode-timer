@@ -20,6 +20,7 @@
         "*://leetcode.com/problems/*"
       ],
       "js": [
+        "./dist/browser-polyfill.js",
         "./dist/content_script.js"
       ],
       "css": [
@@ -28,6 +29,8 @@
     }
   ],
   "web_accessible_resources": [
-    "./dist/images/*.svg"
+    "./dist/images/dark-timer.svg",
+    "./dist/images/option.svg",
+    "./dist/images/reset.svg"
   ]
 }
