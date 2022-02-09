@@ -3,12 +3,8 @@
   "name": "LeetCode Timer",
   "description": "LeetCode Timer is a Firefox extension for timing LeetCode problems",
   "homepage_url": "https://github.com/briankosw/leetcode-timer",
-  "developer": {
-    "name": "Brian Ko",
-    "url": "https://github.com/briankosw"
-  },
   "icons": {
-    "64": "./dist/images/lct.svg"
+    "64": "dist/images/lct.svg"
   },
   "version": "0.2.0",
   "permissions": [
@@ -20,17 +16,17 @@
         "*://leetcode.com/problems/*"
       ],
       "js": [
-        "./dist/browser-polyfill.js",
-        "./dist/content_script.js"
+        "dist/browser-polyfill.js",
+        "dist/content_script.js"
       ],
       "css": [
-        "./dist/css/styles.css"
+        "dist/css/styles.css"
       ]
     }
   ],
   "web_accessible_resources": [
-    "./dist/images/dark-timer.svg",
-    "./dist/images/option.svg",
-    "./dist/images/reset.svg"
+    "dist/images/dark-timer.svg",
+    "dist/images/option.svg",
+    "dist/images/reset.svg"
   ]
 }
