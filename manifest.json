@@ -1,21 +1,26 @@
 {
-	"manifest_version": 2,
-	"name": "leetcode-timer",
-	"description": "Firefox extension for timing LeetCode problems",
-	"version": "0.1.0",
-	"icons": {
-		"64": "./dist/images/light-timer.svg"
-	},
-	"content_scripts": [
-		{
-			"matches": [
-				"*://leetcode.com/problems/*"
-			],
-			"js": ["./dist/content_script.js"],
-			"css": [
-				"./dist/css/styles.css"
-			]
-		}
-	],
-	"web_accessible_resources": ["./dist/images/*.svg"]
+  "manifest_version": 3,
+  "name": "LeetCode Timer",
+  "description": "Firefox extension for timing LeetCode problems",
+  "homepage_url": "https://github.com/briankosw/leetcode-timer",
+  "version": "0.1.0",
+  "icons": {
+    "64": "./dist/images/light-timer.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://leetcode.com/problems/*"
+      ],
+      "js": [
+        "./dist/content_script.js"
+      ],
+      "css": [
+        "./dist/css/styles.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "./dist/images/*.svg"
+  ]
 }
