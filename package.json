@@ -16,6 +16,7 @@
     "jquery": "^3.6.0"
   },
   "devDependencies": {
+    "@sindresorhus/tsconfig": "^2.0.0",
     "@types/firefox-webext-browser": "^94.0.1",
     "@types/jquery": "^3.5.13",
     "copy-webpack-plugin": "^10.2.3",
