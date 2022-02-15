@@ -5,7 +5,7 @@
   "homepage_url": "https://github.com/briankosw/leetcode-timer",
   "version": "0.1.0",
   "icons": {
-    "64": "./dist/images/light-timer.svg"
+    "64": "./dist/images/lct.svg"
   },
   "content_scripts": [
     {
