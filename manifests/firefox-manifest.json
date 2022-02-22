@@ -8,7 +8,7 @@
     "url": "https://github.com/briankosw"
   },
   "icons": {
-    "64": "dist/images/lct.svg"
+    "128": "dist/images/lct.png"
   },
   "version": "0.2.0",
   "permissions": [
