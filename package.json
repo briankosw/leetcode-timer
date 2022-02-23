@@ -1,7 +1,7 @@
 {
   "name": "leetcode-timer",
-  "version": "0.1.0",
-  "description": "Firefox extension for timing LeetCode problems",
+  "version": "0.2.1",
+  "description": "Web extension for timing LeetCode problems",
   "scripts": {
     "start": "web-ext run",
     "watch": "webpack -w --mode development",
@@ -13,7 +13,8 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "webextension-polyfill": "^0.8.0"
   },
   "devDependencies": {
     "@sindresorhus/tsconfig": "^2.0.0",

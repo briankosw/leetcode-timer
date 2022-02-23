@@ -3,6 +3,10 @@
   "name": "LeetCode Timer",
   "description": "LeetCode Timer is a Firefox extension for timing LeetCode problems",
   "homepage_url": "https://github.com/briankosw/leetcode-timer",
+  "developer": {
+    "name": "Brian Ko",
+    "url": "https://github.com/briankosw"
+  },
   "icons": {
     "128": "dist/images/lct.png"
   },
