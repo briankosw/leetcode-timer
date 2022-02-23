@@ -1,7 +1,7 @@
 {
   "name": "leetcode-timer",
-  "version": "0.1.0",
-  "description": "Firefox extension for timing LeetCode problems",
+  "version": "0.2.1",
+  "description": "Web extension for timing LeetCode problems",
   "scripts": {
     "start": "web-ext run",
     "watch": "webpack -w --mode development",

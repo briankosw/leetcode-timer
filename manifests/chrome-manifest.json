@@ -3,7 +3,7 @@
   "name": "LeetCode Timer",
   "description": "LeetCode Timer is a Chrome extension for timing LeetCode problems",
   "homepage_url": "https://github.com/briankosw/leetcode-timer",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "icons": {
     "128": "dist/images/lct.png"
   },
