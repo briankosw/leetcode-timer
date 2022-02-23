@@ -3,7 +3,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    content_script: path.resolve(__dirname, "src/addTimerButton.ts"),
+    content_script: path.resolve(__dirname, "src/addTimerButton.tsx"),
   },
   output: {
     filename: "[name].js",
@@ -12,14 +12,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts?$/,
+        test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
       },
     ],
   },
   resolve: {
-    extensions: [".ts", "js"],
+    extensions: [".ts", "js", "tsx"],
   },
   plugins: [
     new CopyPlugin({

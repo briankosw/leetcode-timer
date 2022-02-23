@@ -13,6 +13,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "dom-chef": "^5.0.0",
     "jquery": "^3.6.0",
     "webextension-polyfill": "^0.8.0"
   },

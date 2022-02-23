@@ -66,7 +66,13 @@
 .timerButtonLabel {
   margin-bottom: 0px;
   width: 105px;
-  text-align: start;
+  text-align: center;
+}
+
+.resetButtonLabel {
+  margin-bottom: 0px;
+  width: 105px;
+  text-align: center;
 }
 
 .optionDiv {
