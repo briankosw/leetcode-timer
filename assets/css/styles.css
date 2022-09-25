@@ -46,7 +46,7 @@
   transition: all 0.18s ease-in-out 0s;
   height: 32px;
   cursor: pointer;
-  background: #fff none repeat scroll 0% 0%;
+  background: right;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +55,7 @@
 
 .timerButton:hover {
   border: 1px solid rgb(84, 110, 122);
-  background: #eceff1;
+  background: right;
 }
 
 .timerImg {

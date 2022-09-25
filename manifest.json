@@ -8,12 +8,14 @@
   },
   "version": "0.2.1",
   "permissions": [
-    "*://leetcode.com/problems/*"
+    "*://leetcode.com/problems/*",
+    "*://leetcode.cn/problems/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "*://leetcode.com/problems/*"
+        "*://leetcode.com/problems/*",
+        "*://leetcode.cn/problems/*"
       ],
       "js": [
         "dist/browser-polyfill.js",

@@ -10,7 +10,8 @@
   "content_scripts": [
     {
       "matches": [
-        "*://leetcode.com/problems/*"
+        "*://leetcode.com/problems/*",
+        "*://leetcode.cn/problems/*"
       ],
       "js": [
         "dist/browser-polyfill.js",
@@ -27,6 +28,6 @@
       "dist/images/option.svg",
       "dist/images/reset.svg"
     ],
-    "matches": ["https://leetcode.com/*"]
+    "matches": ["https://leetcode.com/*", "*://leetcode.cn/problems/*"]
   }]
 }
