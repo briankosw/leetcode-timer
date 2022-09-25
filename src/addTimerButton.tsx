@@ -2,7 +2,13 @@ import $ from "jquery";
 import Timer from "./timer";
 import React from "dom-chef";
 
-const runCodeButtonAttr = "data-cy=\"run-code-btn\""
+function findRunCodeButton(){
+  var ns = $('[data-cypress="RunCode"]'); // leetcode.cn
+  if (ns===null){
+    ns = $('[data-cy="run-code-btn"]'); // leetcode.com
+  }
+  return ns;  
+}
 
 let isTimerOn = false;
 let timer: Timer;
@@ -102,12 +108,11 @@ const el = (
 );
 
 const addTimerButton = () => {
-  const runCodeButton = $(`[${runCodeButtonAttr}]`);
+  const runCodeButton = findRunCodeButton();
   const timerButton = $(".timerButton");
   if (runCodeButton !== null && !timerButton.length) {
-    // Get the div that we'll insert the timer button into
-    const buttonDiv = runCodeButton.parent();
-    $(el).insertBefore(buttonDiv);;
+    // const buttonDiv = runCodeButton.parent();
+    $(el).insertBefore(runCodeButton);;
     $(".optionDiv").hide();
   }
 }
