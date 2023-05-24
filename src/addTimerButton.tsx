@@ -2,7 +2,7 @@ import $ from "jquery";
 import Timer from "./timer";
 import React from "dom-chef";
 
-const runCodeButtonAttr = "data-cy=\"run-code-btn\""
+const runCodeButtonAttr = "data-e2e-locator=\"console-run-button\""
 
 let isTimerOn = false;
 let timer: Timer;
