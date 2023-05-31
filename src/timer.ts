@@ -35,7 +35,7 @@ export default class Timer {
   static calculateHMS(elapsedMilliseconds: number): [number, number, number] {
     const elapsedSeconds = Math.floor(elapsedMilliseconds / 1000);
     const hours = Math.floor(elapsedSeconds / 3600);
-    const minutes = Math.floor(elapsedSeconds / 60);
+    const minutes = Math.floor(elapsedSeconds / 60) % 60;
     const seconds = elapsedSeconds % 60;
     return [hours, minutes, seconds];
   }
